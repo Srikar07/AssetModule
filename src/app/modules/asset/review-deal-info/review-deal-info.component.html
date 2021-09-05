@@ -1,0 +1,143 @@
+<!--begin::Profile Overview-->
+<div class="d-flex flex-row">
+    <!--begin::Aside-->
+    <div class="flex-row-auto offcanvas-mobile w-300px w-xl-350px" id="kt_profile_aside">
+
+        <div class="card card-custom card-stretch">
+            <!--begin::Body-->
+            <div class="card-body pt-4">
+                <!--begin::Toolbar-->
+                <!--end::Toolbar-->
+                <!--begin::User-->
+                <!--<div class="d-flex align-items-center">
+                    <div class="symbol symbol-60 symbol-xxl-100 mr-5 align-self-start align-self-xxl-center">
+                        <div class="symbol-label" [style.backgroundImage]="'url('+ user.pic +')'"></div>
+                        <i class="symbol-badge bg-success"></i>
+                    </div>
+                    <div>
+                        <a class="font-weight-bolder font-size-h5 text-dark-75 text-hover-primary cursor-pointer">
+                            {{user.firstname}} {{user.lastname}}
+                        </a>
+                        <div class="text-muted">
+                            {{user.ocupation}}
+                        </div>
+                        <div class="mt-2">
+                            <a class="btn btn-sm btn-primary font-weight-bold mr-2 py-2 px-3 px-xxl-5 my-1 cursor-pointer">Chat</a>
+                            <a class="btn btn-sm btn-success font-weight-bold py-2 px-3 px-xxl-5 my-1 cursor-pointer">Follow</a>
+                        </div>
+                    </div>
+                </div>-->
+                <!--end::User-->
+                <!--begin::Contact-->
+                <div class="py-9">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <span class="font-weight-bold mr-2">Deal Name:</span>
+                        <a class="text-muted text-hover-primary">{{reviewInfo.name}}</a>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <span class="font-weight-bold mr-2">Business Name:</span>
+                        <span class="text-muted">{{reviewInfo.businessUnitName}}</span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span class="font-weight-bold mr-2">Start Date:</span>
+                        <span class="text-muted">{{reviewInfo.startDate}}</span>
+                    </div>
+                </div>
+                <!--end::Contact-->
+                <!--begin::Nav-->
+                <div class="navi navi-bold navi-hover navi-active navi-link-rounded">
+                    <div class="navi-item mb-2">
+                        <a class="navi-link py-4" routerLink="./Default" routerLinkActive="active">
+                            <span class="navi-icon mr-2">
+                                <span [inlineSVG]="'./assets/media/svg/icons/Files/Pictures1.svg'" cacheSVG="true" class="svg-icon"></span>
+                            </span>
+                            <span class="navi-text font-size-lg">
+                                Images
+                            </span>
+                        </a>
+                    </div>
+                    <div class="navi-item mb-2">
+                        <a class="navi-link py-4" routerLink="./dealBasicInformation" routerLinkActive="active">
+                            <span class="navi-icon mr-2">
+                                <span [inlineSVG]="'./assets/media/svg/icons/General/Bookmark.svg'" cacheSVG="true" class="svg-icon"></span>
+                            </span>
+                            <span class="navi-text font-size-lg">
+                                Basic Information
+                            </span>
+                        </a>
+                    </div>
+                    <div class="navi-item mb-2">
+                        <a class="navi-link py-4" routerLink="./dealDocuments" routerLinkActive="active">
+                            <span class="navi-icon mr-2">
+                                <span [inlineSVG]="'./assets/media/svg/icons/Files/File.svg'" cacheSVG="true" class="svg-icon"></span>
+                            </span>
+                            <span class="navi-text font-size-lg">
+                                Deal Documents
+
+                            </span>
+                        </a>
+                    </div> 
+                    <div class="navi-item mb-2">
+                        <a class="navi-link py-4" routerLink="./properties" routerLinkActive="active">
+                            <span class="navi-icon mr-2">
+                                <span [inlineSVG]="'./assets/media/svg/icons/Map/Marker1.svg'" cacheSVG="true" class="svg-icon"></span>
+                            </span>
+                            <span class="navi-text font-size-lg">
+                                Properties
+                            </span>
+                        </a>
+                    </div>
+
+                    <!--<div class="navi-item mb-2">
+                        <a class="navi-link py-4" routerLink="./account-information" routerLinkActive="active">
+                            <span class="navi-icon mr-2">
+                                <span [inlineSVG]="'./assets/media/svg/icons/Code/Compiling.svg'" cacheSVG="true" class="svg-icon"></span>
+                            </span>
+                            <span class="navi-text font-size-lg">
+                                Account Information
+                            </span>
+                        </a>
+                    </div>
+                    <div class="navi-item mb-2">
+                        <a class="navi-link py-4" routerLink="/user-profile/change-password" routerLinkActive="active">
+                            <span class="navi-icon mr-2">
+                                <span [inlineSVG]="'./assets/media/svg/icons/Communication/Shield-user.svg'" cacheSVG="true"
+                                      class="svg-icon"></span>
+                            </span>
+                            <span class="navi-text font-size-lg">
+                                Change Password
+                            </span>
+                            <span class="navi-label">
+                                <span class="label label-light-danger label-rounded font-weight-bold">5</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="navi-item mb-2">
+                        <a class="navi-link py-4" routerLink="/user-profile/email-settings" routerLinkActive="active">
+                            <span class="navi-icon mr-2">
+                                <span [inlineSVG]="'./assets/media/svg/icons/Communication/Mail-opened.svg'" cacheSVG="true"
+                                      class="svg-icon"></span>
+                            </span>
+                            <span class="navi-text font-size-lg">
+                                Email settings
+                            </span>
+                        </a>
+                    </div>-->
+                </div>
+                <!--end::Nav-->
+            </div>
+            <!--end::Body-->
+        </div>
+        <!--end::Profile Card-->
+
+
+    </div>
+    <!--end::Aside-->
+    <!--begin::Content-->
+    <div class="flex-row-fluid ml-lg-8">
+        <router-outlet></router-outlet>
+    </div>
+    <!--end::Content-->
+</div>
+<!--end::Profile Overview-->
+<!--begin::Profile Card-->

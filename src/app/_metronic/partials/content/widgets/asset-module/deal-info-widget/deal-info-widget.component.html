@@ -1,0 +1,40 @@
+<!--begin::Mixed Widget 11-->
+<div class="card card-custom" [ngClass]="cssClass">
+    <!--begin::Body-->
+    <div class="card-body d-flex flex-column">
+        <div class="flex-grow-1 pb-5">
+            <!--begin::Info-->
+                <div class="showBorder img-container" [ngClass]="cssClass"
+                     [ngStyle]="{ height: widgetHeight }"
+                     style="background-image: url('{{dealInfo.images}}') " (click)="navigateToReviewPage()">
+                </div>
+            <div class="d-flex align-items-center pr-2 mb-6">
+                <span class="text-muted font-weight-bold font-size-lg flex-grow-1">
+                    <b>Deal</b>: {{dealInfo.name}}
+                    
+                </span>
+            </div>
+            <!--end::Info-->
+            <!--begin::Desc-->
+            <p class="text-dark-50 font-weight-normal font-size-lg mt-6">
+                <b>Ownership</b>: {{dealInfo.businessUnitName}}
+            </p>
+            <p class="text-dark-50 font-weight-normal font-size-lg mt-6">
+                <b>Next Critical Date</b>: {{dealInfo.startDate}}
+            </p><p class="text-dark-50 font-weight-normal font-size-lg mt-6">
+                <b>properties</b>: {{dealInfo.investmentLead}}
+            </p>
+            <!--end::Desc-->
+        </div>
+    </div>
+    <!--end::Body-->
+</div>
+<!--end::Mixed Widget 11-->
+
+<style>
+    .img-container {
+        height: 150px;
+        width: 100%;
+        background-size: cover;
+    }
+</style>

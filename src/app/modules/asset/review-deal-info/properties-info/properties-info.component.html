@@ -1,0 +1,64 @@
+<!--begin::Advance Table: Widget 7-->
+<div class="card card-custom">
+    <!--begin::Header-->
+    <div class="card-header border-0 pt-5">
+        <h3 class="card-title align-items-start flex-column">
+            <span class="card-label font-weight-bolder text-dark">Basic Information</span>
+            <span class="text-muted mt-3 font-weight-bold font-size-sm"></span>
+        </h3>
+    </div>
+    <!--end::Header-->
+    <!--begin::Body-->
+    <div class="card-body pt-2 pb-0 mt-n3">
+        <div class="kt-form__section kt-form__section--first">
+            <div class="kt-wizard-v2__form">
+                <div class="table-responsive angular-bootstrap-table">
+                    <table class="table table-bordered table-striped table-head-custom table-vertical-center overflow-hidden  w-auto">
+                        <thead>
+                            <tr>
+                                <th>Property Name</th>
+                                <th>Property Type</th>
+                                <th>Ownership</th>
+                                <th>Address</th>
+                                <th>Units</th>
+                                <th>Property Manager</th>
+                                <th>Asset Manager</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr *ngFor="let dealProperty of dealInfo.properties; index as i" [ngClass]="{'active': dealProperty.propertyName}">
+                                <td>
+                                    {{dealProperty.propertyName}}
+                                </td>
+                                <td>
+                                    {{dealProperty.propertyType}}
+
+                                </td>
+                                <td>
+                                    {{dealProperty.businessUnitName}}
+                                </td>
+                                <td>
+                                    {{dealProperty.propertyAddressString}}
+                                </td>
+                                <td>
+                                    {{dealProperty.units}}
+                                </td>
+                                <td>
+                                    {{dealProperty.propertyManager}}
+                                </td>
+                                <td>
+                                    {{dealProperty.assetManager}}
+                                </td>
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end::Body-->
+</div>
+<!--end::Advance Table Widget 7-->

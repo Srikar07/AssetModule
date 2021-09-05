@@ -1,0 +1,62 @@
+<!--begin::Advance Table: Widget 7-->
+<div class="card card-custom" [ngClass]="cssClass">
+    <!--begin::Header-->
+    <div class="card-header border-0 pt-5">
+        <h3 class="card-title align-items-start flex-column">
+            <span class="card-label font-weight-bolder text-dark">Basic Information</span>
+            <span class="text-muted mt-3 font-weight-bold font-size-sm"></span>
+        </h3>
+    </div>
+    <!--end::Header-->
+    <!--begin::Body-->
+    <div class="card-body pt-2 pb-0 mt-n3">
+        <div class="kt-form__section kt-form__section--first">
+            <div class="kt-wizard-v2__form">
+                <div class="form-group">
+                    <label>Deal Type:</label>
+                    <input type="text" class="form-control" disabled value="{{reviewInfo.type}}" />
+                </div>
+                <div class="form-group">
+                    <label>Deal Name:</label>
+                    <input type="text" class="form-control" disabled value="{{reviewInfo.name}}" />
+                </div>
+                <div class="form-group">
+                    <label>Business Name:</label>
+                    <input type="text" class="form-control" disabled value="{{reviewInfo.businessUnitName}}" />
+                </div>
+                <div class="form-group">
+                    <label>Project Status:</label>
+                    <input type="text" class="form-control" disabled value="{{reviewInfo.statusName}}" />
+                </div>
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="form-group">
+                            <label>Project Manager:</label>
+                            <input type="text" class="form-control" disabled value="{{reviewInfo.propertyManager}}" />
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="form-group">
+                            <label>Investment Lead:</label>
+                            <input type="text" class="form-control" disabled value="{{reviewInfo.investmentLead}}" />
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="form-group">
+                            <label>Legal Lead:</label>
+                            <input type="text" class="form-control" disabled value="{{reviewInfo.legalLead}}" />
+                        </div>
+                    </div>
+                </div>
+                
+               
+                <div class="form-group">
+                    <label>Property:</label>
+                    <input type="text" class="form-control" disabled value="{{reviewInfo.properties}}" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end::Body-->
+</div>
+<!--end::Advance Table Widget 7-->

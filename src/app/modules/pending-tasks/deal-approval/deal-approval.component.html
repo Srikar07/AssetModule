@@ -1,0 +1,46 @@
+<div class="card card-custom card-stretch gutter-b">
+    <!-- Header -->
+    <div class="card-header border-0 mt-4">
+        <h3 class="card-title align-items-start flex-column">
+            <span class="card-label font-weight-bolder text-dark">Deal Approvals</span>
+        </h3>
+    </div>
+    <!-- Body -->
+    <div class="card-body pt-8">
+        <!--begin::Item-->
+        <div class="d-flex align-items-center mb-10">
+            <div class="col-xl-12">
+                <div class="example-preview">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Deal Name</th>
+                                <th>Deal Amount</th>
+                                <th>Requested By</th>
+                                <th>Requested Date</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let task of pendingTasks">
+                                <td>{{task.id}}</td>
+                                <td>{{task.dealName}}</td>
+                                <td>{{task.dealAmount}}</td>
+                                <td>{{task.requestedBy}}</td>
+                                <td>{{task.requestedDate}}</td>
+                                <td>
+                                    <a title="Approve" class="btn btn-bg-success btn-hover-light-primary btn-text-white"
+                                       (click)="approve(task)">     
+                                        Approve
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
