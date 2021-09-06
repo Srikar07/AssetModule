@@ -21,7 +21,7 @@ import { AssetComponent } from './modules/asset/asset.component';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { PendingTasksComponent } from './modules/pending-tasks/pending-tasks.component';
-import { PendingTasksModule } from './modules/pending-tasks/pending-tasks.module';
+// import { PendingTasksModule } from './modules/pending-tasks/pending-tasks.module';
 
 import { MatChipsModule } from '@angular/material/chips';
 
@@ -46,7 +46,7 @@ function appInitializer(authService: AuthService) {
     HighlightModule,
       ClipboardModule,
       PdfViewerModule,
-      PendingTasksModule,
+      // PendingTasksModule,
       MatChipsModule,
     // #fake-start#
     environment.isMockEnabled
