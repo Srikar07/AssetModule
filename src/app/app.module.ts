@@ -46,7 +46,7 @@ function appInitializer(authService: AuthService) {
     HighlightModule,
       ClipboardModule,
       PdfViewerModule,
-      PendingTasksModule,
+      // PendingTasksModule,
       MatChipsModule,
     // #fake-start#
     environment.isMockEnabled
